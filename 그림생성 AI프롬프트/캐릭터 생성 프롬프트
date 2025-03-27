@@ -1,0 +1,24 @@
+The background is a vibrant cyber city with glowing signs and floating pixel effects, giving a lively and futuristic atmosphere.
+The lighting is soft but dynamic, with a mix of warm and cool neon tones.
+The focus is sharp on the character, ensuring clear facial details and outfit design, while the background is slightly blurred for depth."
+
+✅ 최적화 포인트
+**‘chibi-style’**로 명확한 스타일 지정
+
+**‘comic-style visual effects’**로 경쾌한 느낌 추가
+
+**‘sharp focus on character’**로 시가 캐릭터에 초점을 맞추도록 유도
+
+① 귀엽고 경쾌한 마스코트 스타일
+샘플링 방법: DPM++ 2M Karras
+
+샘플링 스텝: 30~40
+
+CFG Scale: 7~9
+
+● 이유:
+DPM++ 2M Karras는 빠르면서도 선명한 디테일을 잡아주는 샘플러로, 깔끔한 일러스트 스타일에 적합.
+
+샘플링 스텝을 30~40 정도로 설정하면 캐릭터 디테일을 충분히 유지하면서 빠른 생성이 가능.
+
+CFG Scale을 7~9로 설정하면 프롬프트를 강하게 반영하면서도 과도한 왜곡 방지 가능.
