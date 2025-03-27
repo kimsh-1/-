@@ -1,0 +1,12 @@
+Bottom-right panel (small, about 20% width, lower half): the mage collapsing or fainting on the ground, eyes closed, her limbs limp, indicating she has expended all her energy.
+Overall style: dark fantasy anime, highly detailed, sharp lines, cinematic lighting, intense effects, and strong contrast. 
+Landscape orientation, aspect ratio 16:9."
+
+Negative Prompt: "lowres, blurry, bad anatomy, bad proportions, watermark, text, logo, disfigured, extra limbs"
+
+
+Sampling method: Euler a
+Sampling steps: 30
+CFG Scale: 9
+Seed: 123456 (예시)
+Resolution: 1024×576 (예시, 16:9)
