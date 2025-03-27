@@ -1,0 +1,41 @@
+"Three-panel layout in a single wide (landscape) image:
+Top row has two small panels, each illustrated with a one-point perspective, featuring a charming young prince and a lovely princess in comedic, lighthearted interactions. 
+Below, a large panel using three-point perspective shows the prince and princess on a whimsical date in a bright fantasy setting—perhaps a bustling royal courtyard or a blooming garden—emphasizing a playful, romantic comedy atmosphere. 
+Rendered in a love-comedy anime style with soft pastel colors, warm lighting, expressive faces, and lively details. High detail, sharp lines, 16:9 aspect ratio."
+
+Negative Prompt: "lowres, blurry, bad anatomy, bad proportions, watermark, text, logo, disfigured, extra limbs"
+
+Sampling method: Euler a
+Sampling steps: 30
+CFG Scale: 9
+Seed: 123456 (예시)
+Resolution: 1024×576 (16:9)
+
+구성 요소 설명
+3컷(패널) 레이아웃
+
+상단: 2개의 작은 패널, 1점 투시(one-point perspective)
+
+하단: 1개의 큰 패널, 3점 투시(three-point perspective)
+
+등장인물
+
+왕자와 공주
+
+상단 패널: 가벼운 코믹 상황(서로 장난치거나 티격태격)
+
+하단 패널: 데이트 장면(로맨틱하면서도 코믹한 분위기)
+
+스타일 & 분위기
+
+러브코미디 애니메이션
+
+부드러운 파스텔톤, 밝은 조명, 경쾌한 표정
+
+기술적 파라미터
+
+Sampling Steps, CFG Scale, 해상도(16:9) 등은 필요에 따라 조정
+
+Negative Prompt로 원치 않는 요소 제거
+
+이 프롬프트를 텍스트-투-이미지 생성기에 입력한 뒤, 원하는 결과가 나올 때까지 가중치, 파라미터 등을 반복 조정하면 됩니다.
