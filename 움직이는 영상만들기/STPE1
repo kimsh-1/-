@@ -1,0 +1,9 @@
+Create a 2D pixel art sprite sheet image at exactly 936×1248 resolution. The sheet must be composed of exactly 12 animation frames arranged in 3 columns and 4 rows (each frame being exactly 312×312 pixels). 
+
+You must not crop, truncate, or add any padding or borders. The entire canvas must be filled exactly to the edges. All 12 frames must be **fully visible**, including the bottom row. The sprite sheet must **completely use** the 936×1248 resolution **without any loss** or cutoff of frame data.
+
+The subject is the character from the input image. The character is {행동_문장}. Show the animation as the action intensifies progressively across the 12 frames.
+
+Use retro RPG-style pixel art with clear pixel definition, clean edges, and dynamic motion between frames, using warm and soft coloring similar to Ghibli style. The background should be a flat warm beige.
+
+The animation must feel fluid when sequenced from the first to the twelfth frame.
