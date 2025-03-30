@@ -1,0 +1,29 @@
+A vertical educational Korean comic panel for advanced Korean pronunciation and pangram visualization.
+
+Canvas size: 1024×1792, high-DPI portrait mode. Use the full canvas area. Background should be soft beige or pastel. The visual style is a hybrid of clean Korean 학습툰 and modern Instagram webtoon aesthetics.
+
+At the top, draw a large white speech bubble with black outlines and softly rounded corners. Inside, render the following Korean sentence exactly as given, with no corrections:
+
+다람쥐 헌 쳇바퀴에 타고파 꺾꺾한 길을 빡빡하게 찢으며 쌀쌀맞게 째려보다 값나가는 물건 앞에서 얄팍하게 얘기해봐
+
+Split rules: Use Python-style .split() to tokenize by space. For each token, group into chunks of maximum 4 characters. Each chunk is rendered as a separate visual element. All chunks must be shown in a single horizontal line, centered within the speech bubble. No line breaks, no punctuation, no quotation marks. Absolutely no corrections or normalization of spacing, spelling, grammar, particles, or phonemes.
+
+Strict text rendering rules:
+- Do not alter or interpret any particle, suffix, or ending
+- Preserve all tense consonants (ㄲ, ㄸ, ㅃ, ㅆ, ㅉ)
+- Preserve all complex vowels (ㅒ, ㅖ, ㅙ, ㅞ, ㅢ)
+- Preserve all 받침 including complex 받침 (e.g., ㅄ, ㄺ, ㄻ, etc.)
+
+Font: Noto Sans KR Bold only — sharp, high-contrast, pixel-stable Korean sans-serif.
+
+Below the main speech bubble, place a rectangular speech box containing the following sentence, rendered with the same 4-character chunking rule:
+
+이 문장은 모든 자음, 모음, 복모음, 받침을 포함하는 한국어 판그램입니다.
+
+Apply the same .split() and 4-character max chunking rule. Each chunk should be visually distinct and placed horizontally within the box. No line breaks or punctuation. Do not rephrase or simplify.
+
+At the bottom, draw a confident Korean male teacher in his 30s. Pose: smiling, proud, and pointing upward with one arm extended. Outfit: clean pastel-colored pullover. Use black vector outlines, flat coloring, and soft shadows. Style should feel educational and trustworthy.
+
+All Korean characters must be sharp, correctly formed, and entirely unmodified — including all tense consonants, compound vowels, and complex 받침.
+
+Tags: Korean pangram, full phoneme coverage, tense consonants, 복모음, 복받침, pronunciation training, 다람쥐 헌 쳇바퀴에 타고파, 얘기해봐, 학습툰, token split, Noto Sans KR, 4-character chunking, no grammar correction
