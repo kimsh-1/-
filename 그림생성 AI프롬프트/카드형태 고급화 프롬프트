@@ -1,0 +1,41 @@
+캐릭터기반 카드제작 프롬프트
+-----------------------------------------------------------------------------------
+
+Create a fantasy-style character card featuring a gray tabby cat programmer wearing round glasses and a teal hoodie with an ID badge. The cat should be holding a tablet displaying code. Design the card with the following elements:
+
+1. Bold futuristic title "CODEMASTER" or "DEBUGGER" at the top in a modern tech font
+2. Dark cosmic background with subtle digital particles or code snippets floating
+3. Golden/orange accent colors and frame elements
+4. Small descriptive text block below the character describing their abilities: "Master of algorithms and keeper of secrets. This feline genius debugs with precision and elegance. No code is too complex, no bug too elusive."
+5. A small rating or classification icon in the bottom corner (like "S-Tier" or "Senior Dev")
+6. Include a tagline at the bottom: "Where they code, solutions follow"
+7. Add small decorative tech icons or symbols in corners
+
+Overall aesthetic should blend fantasy card game design with cyberpunk/tech elements, featuring high contrast and dramatic lighting on the main character.
+-----------------------------------------------------------------------------------
+
+영상제작용
+-----------------------------------------------------------------------------------
+
+Animate only the cat character in this image.
+
+1. Movement Scope:
+- The cat's eyes should blink gently every few seconds.
+- Subtle head tilt or ear flick, giving a natural lifelike feel.
+- Tail sways slowly from side to side, as if relaxed but alert.
+- Slight hand motion to simulate tablet interaction (like a light twitch or tap).
+
+2. Keep static:
+- The gold frame, background code, text, and card layout must remain completely static.
+- Tablet screen text and S-TIER badge should not animate.
+
+3. Style Consistency:
+- Maintain the existing lighting and color tone.
+- Preserve the premium, cinematic rendering of the original image.
+- Use soft motion blending (not cartoonish), similar to high-end trading card animation (e.g. MTG Arena FX or Holo cards).
+
+4. Output Format:
+- Loopable video or GIF, seamless 5–10 seconds.
+- Smooth transitions without jumps or resets.
+
+-----------------------------------------------------------------------------------
