@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant 3D Rotating Cards</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lora', serif;
+            background-color: #1a1818;
+            /* 배경에 은은한 스포트라이트 효과 추가 */
+            background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.2));
+            color: #e0e0e0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .font-playfair {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        /* 카드들을 담는 컨테이너 */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2.5rem; /* 카드 사이 간격 */
+        }
+
+        /* 3D 효과를 위한 perspective */
+        .scene {
+            perspective: 1500px;
+            width: 300px;
+            height: 420px;
+        }
+
+        .card {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            cursor: pointer;
+            transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .card-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .card-front img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-back {
+            background-color: #2c2a2a;
+            transform: rotateY(180deg);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .card-back h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.75rem;
+            color: #d4af37; /* 금색 계열 */
+            border-bottom: 1px solid #d4af37;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .card-back p {
+            font-size: 1rem;
+            color: #c0c0c0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="text-center mb-12">
+        <h1 class="font-playfair text-4xl md:text-5xl font-bold text-white tracking-wider">Signature Collection</h1>
+    </header>
+
+    <!-- 카드 컨테이너 -->
+    <div class="card-container">
+        
+        <!-- 카드 1 -->
+        <div class="scene">
+            <div class="card">
+                <div class="card-face card-front">
+                    <img src="https://i.ibb.co/4nJwbr8L/Kakao-Talk-20250912-161726642.jpg" alt="Card 1 Image">
+                </div>
+                <div class="card-face card-back">
+                    <h3>The Artisan</h3>
+                    <p>Crafted with passion, blended with tradition. A true masterpiece of flavor.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 카드 2 -->
+        <div class="scene">
+            <div class="card">
+                <div class="card-face card-front">
+                    <img src="https://i.ibb.co/F4zbRVsm/Kakao-Talk-20250912-161726642-03.jpg" alt="Card 2 Image">
+                </div>
+                <div class="card-face card-back">
+                    <h3>The Connoisseur</h3>
+                    <p>An exquisite selection for the refined palate. Experience pure elegance.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 카드 3 -->
+        <div class="scene">
+            <div class="card">
+                <div class="card-face card-front">
+                    <img src="https://i.ibb.co/cc7qjsSJ/Kakao-Talk-20250912-161726642-04.jpg" alt="Card 3 Image">
+                </div>
+                <div class="card-face card-back">
+                    <h3>The Vintage</h3>
+                    <p>Aged to perfection. A timeless classic that tells a story in every sip.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <footer class="text-center mt-12 text-sm text-gray-500">
+        <p>EST. 2025 &mdash; An Unforgettable Experience</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.scene').forEach(scene => {
+            const card = scene.querySelector('.card');
+
+            // 카드를 클릭하여 뒤집는 기능
+            card.addEventListener('click', () => {
+                card.classList.toggle('is-flipped');
+            });
+            
+            // 3D 호버 효과
+            scene.addEventListener('mousemove', (e) => {
+                const rect = scene.getBoundingClientRect();
+                const x = e.clientX - rect.left - rect.width / 2;
+                const y = e.clientY - rect.top - rect.height / 2;
+
+                const rotateY = (x / (rect.width / 2)) * 15;
+                const rotateX = -(y / (rect.height / 2)) * 15;
+                
+                const flipAngle = card.classList.contains('is-flipped') ? 180 : 0;
+
+                // 클릭으로 뒤집힌 상태와 마우스 움직임에 따른 시점 변화를 함께 적용
+                card.style.transform = `rotateY(${flipAngle + rotateY}deg) rotateX(${rotateX}deg)`;
+            });
+
+            // 마우스가 벗어났을 때 원래 각도로 복귀
+            scene.addEventListener('mouseleave', () => {
+                const flipAngle = card.classList.contains('is-flipped') ? 180 : 0;
+                // 현재 뒤집힌 상태는 유지하면서 시점 효과만 리셋
+                card.style.transform = `rotateY(${flipAngle}deg) rotateX(0deg)`;
+            });
+        });
+    </script>
+</body>
+</html>
+
